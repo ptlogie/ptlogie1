@@ -13,6 +13,8 @@
 <link rel="icon" href="${webPath}/static/favicon.ico" />
 <link rel="shortcut icon" href="${webPath}/static/favicon.ico" />
 <link rel="bookmark" href="${webPath}/static/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="${webPath}/css/jedate-6.5.0/skin/jedate.css">
+ 
 <%--引入Jquery --%>
 <script type="text/javascript" src="${webPath}/js/jquery.min.js"></script>
 <%--引入通用JS包括(弹窗)--%>
@@ -25,3 +27,7 @@
 <script  src="${webPath} /js/particles.min.js"  type="text/javascript"></script>
 
 <script   type="text/javascript"  src="${webPath}/js/jquery.cookie.js"></script>
+
+<script   type="text/javascript"  src="${webPath}/css/jedate-6.5.0/dist/jedate.min.js"></script>
+
+

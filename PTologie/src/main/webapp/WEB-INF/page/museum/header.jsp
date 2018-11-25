@@ -25,15 +25,20 @@
         </div>
         <div class="user">
           <div>
+          <!--页面引入图片，当在一个文件夹时可直接引入 若不在一个文件夹 有共同的父文件夹 可用 ../表示父文件夹  -->
             <img src="../static/img-1.png">
           </div>
-          <a>Admin</a>
+          <!--header必須用静态引入，因为header需要从session获取用户,session在home.jsp里 静态引入是一个是页面  session共享  -->
+          <a>${sessionScope.loginUser.username}</a>
           <ul class="folding">
-            <a><i class="xiugai"></i><span>修改密码</span></a>
-            <a><i class="tuichu"></i><span>退出登录</span></a>
+            <a href="javascript:void(0);" onclick="changepwd()"><i class="xiugai"></i><span>修改密码</span></a>
+            <a href="javascript:void(0);" onclick="logout()"><i class="tuichu"></i><span>退出登录</span></a>
           </ul>
         </div>
       </div>
+   </div>
+      
+     
      <script type="text/javascript">
  	function subarea(){
  		window.location.href="${webPath}/subarea/subareaList.do";
@@ -50,6 +55,15 @@
  			window.location.href="${webPath}/alarm/alarmList.do";
  	
 			}
+			
+			function logout(){
+	 			window.location.href="${webPath}/loginUser/logout.do";
+	 	
+				}
+			function changepwd(){
+	 			window.location.href="${webPath}/loginUser/changepwd.do";
+	 	
+				}
      </script>
 </body>
 
