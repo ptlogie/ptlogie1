@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html>
+<%@ page language="java" pageEncoding="utf-8"%>
+<%@include file="/WEB-INF/page/museum/include.jsp"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"   "http://www.w3.org/TR/html4/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8">
   <title></title>
-  <link rel="stylesheet" type="text/css" href="plugs/jedate-6.5.0/skin/jedate.css">
-  <link rel="stylesheet" type="text/css" href="css/common.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script src="plugs/jedate-6.5.0/dist/jedate.min.js"></script>
-  <script type="text/javascript" src="js/echarts.common.min.js"></script>
-  <script type="text/javascript" src="js/common.js"></script>
   <script type="text/javascript">
     $(function(){
       mPopup();
@@ -41,33 +36,9 @@
 </head>
 <body>
   <div class="page info-area">
-    <div class="m-head">
-      <div class="logo">
-        <a><img src="static/logo.png"></a>
-        <h1>馆藏文物保存环境监控分析平台</h1>
-      </div>
-      <div class="info">
-        <div class="setting">
-          <a></a>
-          <ul class="folding">
-            <a href="mgt-area.html"><i class="quyu"></i><span>区域管理</span></a>
-            <a href="mgt-equipment.html"><i class="shebei"></i><span>设备管理</span></a>
-            <a href="mgt-user.html"><i class="yonghu"></i><span>用户管理</span></a>
-            <a href="mgt-alarm.html"><i class="gaojing"></i><span>告警与控制管理</span></a>
-          </ul>
-        </div>
-        <div class="user">
-          <div>
-            <img src="static/img-1.png">
-          </div>
-          <a>Admin</a>
-          <ul class="folding">
-            <a><i class="xiugai"></i><span>修改密码</span></a>
-            <a><i class="tuichu"></i><span>退出登录</span></a>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <div>
+   <%@ include file="header.jsp" %>
+ </div>
     <div class="m-bread">
       <p>首页 > 区域信息</p>
     </div>

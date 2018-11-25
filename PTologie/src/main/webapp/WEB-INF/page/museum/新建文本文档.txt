@@ -1,8 +1,0 @@
-1、alarm        告警与控制管理
-2、
-area
-         区域管理
-3、equipment
-    设备管理
-4、user         用户管理
-5、home         首页

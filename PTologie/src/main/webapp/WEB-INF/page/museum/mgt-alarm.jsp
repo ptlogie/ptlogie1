@@ -42,7 +42,7 @@
 <body>
   <div class="page mgt-alarm">
   <%@ include file="header.jsp" %>
-    </div>
+  </div>
     <div class="m-bread">
     <style>
 		p{padding:0px; margin:0px;display: inline;}
